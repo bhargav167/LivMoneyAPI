@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Xs2N7gS6vj9H1h2WjvVaK4Dx2b0wQPLOdgkxJp1WW0RQI8U9PI2DJWwQtKFu3CuhSK8vXmD97uYfpvfJRHVsgQ==",
+  "dgSpecHash": "ySn6Tw1RwQRXi9bKw37mk+UGeejJCJMOxeBMtOjJL+WLWbC/TqOx9+fxIdZLlMdIQb4coU5x5yeYm7BhTyk16g==",
   "success": true,
-  "projectFilePath": "K:\\LivMoney(2021)\\LivmoneyAPI\\LivMoneyAPI.csproj",
+  "projectFilePath": "K:\\LivMoney(2021)\\LivMoneyAPI\\LivMoneyAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\kshitiz Bhargav\\.nuget\\packages\\automapper\\6.1.1\\automapper.6.1.1.nupkg.sha512",
     "C:\\Users\\kshitiz Bhargav\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\3.0.1\\automapper.extensions.microsoft.dependencyinjection.3.0.1.nupkg.sha512",

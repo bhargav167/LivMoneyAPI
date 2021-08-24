@@ -7633,22 +7633,24 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "K:\\LivMoney(2021)\\LivmoneyAPI\\LivMoneyAPI.csproj",
+      "projectUniqueName": "K:\\LivMoney(2021)\\LivMoneyAPI\\LivMoneyAPI.csproj",
       "projectName": "LivMoneyAPI",
-      "projectPath": "K:\\LivMoney(2021)\\LivmoneyAPI\\LivMoneyAPI.csproj",
+      "projectPath": "K:\\LivMoney(2021)\\LivMoneyAPI\\LivMoneyAPI.csproj",
       "packagesPath": "C:\\Users\\kshitiz Bhargav\\.nuget\\packages\\",
-      "outputPath": "K:\\LivMoney(2021)\\LivmoneyAPI\\obj\\",
+      "outputPath": "K:\\LivMoney(2021)\\LivMoneyAPI\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\kshitiz Bhargav\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\kshitiz Bhargav\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net5.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -7750,7 +7752,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.204\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
       }
     }
   }
