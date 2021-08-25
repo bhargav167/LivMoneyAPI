@@ -119,8 +119,16 @@ namespace LivMoneyAPI.Controllers.Authentication {
             if (!ModelState.IsValid)
                 return BadRequest (ModelState);
 
-            var LoggedInUser = await _authrepo.UserLogin (loginModel.Email, loginModel.Password);
-               _responces.Status = 200;
+            try {
+                var LoggedInUser = await _authrepo.UserLogin (loginModel.Email, loginModel.Password);
+                if (LoggedInUser == null) {
+                    _responces.Status = 209;
+                    _responces.Success = true;
+                    _responces.Status_Message = $"User not avalable for {loginModel.Email} email!";
+                    _responces.data = null;
+                    return Ok (_responces);
+                }
+                _responces.Status = 200;
                 _responces.Success = true;
                 _responces.Status_Message = "User loggedIn successfully!";
                 var userDtos = new UserDtos () {
@@ -133,6 +141,10 @@ namespace LivMoneyAPI.Controllers.Authentication {
                 };
                 _responces.data = userDtos;
                 return Ok (_responces);
+            } catch (System.Exception ex) {
+                throw new Exception ($"Error in Login! {ex}");
+            }
+
         }
     }
 }
