@@ -7,6 +7,7 @@ using LivMoneyAPI.Extension.AuthReponces;
 using LivMoneyAPI.Helper;
 using LivMoneyAPI.Repository.AuthenticationRepo;
 using LivMoneyAPI.Repository.Crud;
+using LivMoneyAPI.Repository.ProfileRepo;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -32,6 +33,7 @@ namespace LivMoneyAPI {
             services.AddDbContext<DataContext> (s => s.UseSqlServer (_config.GetConnectionString ("DefaultConnection")));
             services.AddScoped<ICrudRepo, CrudRepo> ();
             services.AddScoped<IAuthRepo, AuthRepo> ();
+            services.AddScoped<IProfileRepo, ProfileRepo> ();
             services.AddControllers ();
             services.AddCors ();
             services.Configure<CloudinarySettings> (_config.GetSection ("CloudinarySettings"));

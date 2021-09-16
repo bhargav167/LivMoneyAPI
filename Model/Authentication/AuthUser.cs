@@ -1,4 +1,6 @@
 using System;
+using System.ComponentModel.DataAnnotations.Schema;
+using LivMoneyAPI.Model.Authentication.AppRole;
 
 namespace LivMoneyAPI.Model.Authentication
 {
@@ -8,7 +10,10 @@ namespace LivMoneyAPI.Model.Authentication
         public string UserName { get; set; }
         public string Name { get; set; }
         public string Email { get; set; }
+        [NotMapped]
         public string Password { get; set; }
+        public byte[] PasswordHash { get; set; }
+        public byte[] PasswordSalt { get; set; }
         public string ModOfRegistration { get; set; }
         public bool IsEmailConfirm { get; set; }
         public bool IsMobilConfirm { get; set; }

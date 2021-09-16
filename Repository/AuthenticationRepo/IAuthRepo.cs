@@ -1,5 +1,6 @@
 using System.Threading.Tasks;
 using LivMoneyAPI.Model.Authentication;
+using LivMoneyAPI.Model.Authentication.AppRole;
 
 namespace LivMoneyAPI.Repository.AuthenticationRepo {
     public interface IAuthRepo {
@@ -11,5 +12,9 @@ namespace LivMoneyAPI.Repository.AuthenticationRepo {
         Task<bool> IsTokenEmailExist (string email,string token);
         Task<AuthUser> getUserByToken (string email,string token);
         Task<AuthUser> UserLogin (string email,string password);
+
+        //Assign Role Modal
+         Task<UserRole> AddAuthRole (UserRole userRole);
+         Task<UserRole> GetAuthRole (int userId);
     }
 }
